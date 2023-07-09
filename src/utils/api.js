@@ -111,9 +111,9 @@ class Api {
 } 
 
 const api = new Api ({
-  url: 'https://mesto.nomoreparties.co/v1/cohort-62',
+  url: 'http://api.mesto.marjen.nomoredo.nomoredomains.work',
   headers: {
-    authorization: 'dee17758-01f3-41db-81d2-b39918f89271',
+    authorization: `Bearer ${localStorage.getItem('token')}`,
     'Content-Type': 'application/json'
   }
 })
